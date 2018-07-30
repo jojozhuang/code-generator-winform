@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<entity name="CNewsComment" modelName="MDLCNewsComment" namespace="SouEi" author="JOJOZHUANG\Administrator" createdDateTime="2009-05-02T12:47:41" schema="dbo" tableName="C_NewsComment" description="dbo.C_NewsComment" spprefix="pr_" XSCodeGen="v0.1 2008-01-09">
+  <primaryKey />
+  <foreignKeys />
+  <indexes>
+    <index name="date" isClustered="True" isUnique="False" ignoreDuplicateKeys="False">
+      <column columnName="IssueDate" descending="False" />
+    </index>
+  </indexes>
+  <columns>
+    <property name="Id" lowerName="id" tableName="C_NewsComment" field="_Id" type="int" getMethod="GetInt32" pattern="No" initialValue="0" columnName="Id" sqlType="Int" sqlLength="4" sqlDefaultValue="0" identity="True" primaryKey="False" foreignKey="False" nullable="False" uiLength="11" description="column of dbo.C_NewsComment.Id (Id)" sqlDescription="Id" />
+    <property name="NewsId" lowerName="newsid" tableName="C_NewsComment" field="_NewsId" type="int" getMethod="GetInt32" pattern="No" initialValue="null" columnName="NewsId" sqlType="Int" sqlLength="4" sqlDefaultValue="null" identity="False" primaryKey="False" foreignKey="False" nullable="True" uiLength="11" description="column of dbo.C_NewsComment.NewsId (NewsId)" sqlDescription="NewsId" />
+    <property name="Content" lowerName="content" tableName="C_NewsComment" field="_Content" type="string" getMethod="GetString" pattern="Yes" initialValue="null" columnName="Content" sqlType="Text" sqlLength="16" sqlDefaultValue="null" identity="False" primaryKey="False" foreignKey="False" nullable="True" uiLength="16" description="column of dbo.C_NewsComment.Content (Content)" sqlDescription="Content" />
+    <property name="IssueDate" lowerName="issuedate" tableName="C_NewsComment" field="_IssueDate" type="DateTime" getMethod="GetDateTime" pattern="Yes" initialValue="null" columnName="IssueDate" sqlType="DateTime" sqlLength="8" sqlDefaultValue="null" identity="False" primaryKey="False" foreignKey="False" nullable="True" uiLength="10" description="column of dbo.C_NewsComment.IssueDate (IssueDate)" sqlDescription="IssueDate" />
+  </columns>
+</entity>

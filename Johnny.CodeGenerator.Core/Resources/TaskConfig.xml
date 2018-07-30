@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" standalone="yes"?>
+<ZrCg>
+  <Task>
+    <TaskId>#TaskId#</TaskId>
+    <TaskName>#TaskName#</TaskName>    
+    <CodeGenerator>
+      <DBServer>
+        <DatabaseType></DatabaseType>
+        <ServerName></ServerName>
+        <ConnectionString></ConnectionString>
+        <DatabaseName></DatabaseName>
+      </DBServer>
+      <Tables></Tables>
+      <Views></Views>
+      <Solution></Solution>
+      <Project></Project>
+      <Template></Template>
+      <Modules></Modules>
+      <NameSpacePrefix></NameSpacePrefix>
+      <NameSpaceSuffix></NameSpaceSuffix>
+    </CodeGenerator>    
+    <Miscellaneous>
+      <Group></Group>
+      <WriteLogToFile>False</WriteLogToFile>
+    </Miscellaneous>
+  </Task>
+</ZrCg>

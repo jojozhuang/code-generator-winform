@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<entity name="CAdvertisement" modelName="MDLCAdvertisement" namespace="SouEi" author="JOJOZHUANG\Administrator" createdDateTime="2009-05-03T12:30:52" schema="dbo" tableName="C_Advertisement" description="dbo.C_Advertisement" spprefix="pr_">
+  <primaryKey>
+    <column columnName="AdId" />
+  </primaryKey>
+  <columns>
+    <property name="AdId" lowerName="adid" tableName="C_Advertisement" field="_adid" initialValue="" columnName="AdId" identity="False" primaryKey="False" foreignKey="False" nullable="False" uiLength="0" description="column of dbo.C_Advertisement.AdId" />
+    <property name="Title" lowerName="title" tableName="C_Advertisement" field="_title" initialValue="" columnName="Title" identity="False" primaryKey="False" foreignKey="False" nullable="False" uiLength="0" description="column of dbo.C_Advertisement.Title" />
+    <property name="Image" lowerName="image" tableName="C_Advertisement" field="_image" initialValue="" columnName="Image" identity="False" primaryKey="False" foreignKey="False" nullable="False" uiLength="0" description="column of dbo.C_Advertisement.Image" />
+    <property name="Url" lowerName="url" tableName="C_Advertisement" field="_url" initialValue="" columnName="Url" identity="False" primaryKey="False" foreignKey="False" nullable="False" uiLength="0" description="column of dbo.C_Advertisement.Url" />
+    <property name="IsValid" lowerName="isvalid" tableName="C_Advertisement" field="_isvalid" initialValue="" columnName="IsValid" identity="False" primaryKey="False" foreignKey="False" nullable="False" uiLength="0" description="column of dbo.C_Advertisement.IsValid" />
+    <property name="Sequence" lowerName="sequence" tableName="C_Advertisement" field="_sequence" initialValue="" columnName="Sequence" identity="False" primaryKey="False" foreignKey="False" nullable="False" uiLength="0" description="column of dbo.C_Advertisement.Sequence" />
+  </columns>
+</entity>

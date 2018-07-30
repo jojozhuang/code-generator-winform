@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<entity name="STopMenu" modelName="MDLSTopMenu" namespace="SouEi" author="JOJOZHUANG\Administrator" createdDateTime="2009-05-02T12:47:44" schema="dbo" tableName="S_TopMenu" description="dbo.S_TopMenu" spprefix="pr_" XSCodeGen="v0.1 2008-01-09">
+  <primaryKey>
+    <column columnName="TopMenuId" />
+  </primaryKey>
+  <foreignKeys />
+  <indexes>
+    <index name="PK_TopMenu" isClustered="True" isUnique="True" ignoreDuplicateKeys="False">
+      <column columnName="TopMenuId" descending="False" />
+    </index>
+  </indexes>
+  <columns>
+    <property name="TopMenuId" lowerName="topmenuid" tableName="S_TopMenu" field="_TopMenuId" type="int" getMethod="GetInt32" pattern="No" initialValue="0" columnName="TopMenuId" sqlType="Int" sqlLength="4" sqlDefaultValue="0" identity="True" primaryKey="True" foreignKey="False" nullable="False" uiLength="11" description="column of dbo.S_TopMenu.TopMenuId (TopMenuId)" sqlDescription="TopMenuId" />
+    <property name="TopMenuName" lowerName="topmenuname" tableName="S_TopMenu" field="_TopMenuName" type="string" getMethod="GetString" pattern="Yes" initialValue="&quot;&quot;" columnName="TopMenuName" sqlType="VarChar(50)" sqlLength="50" sqlDefaultValue="''''" identity="False" primaryKey="False" foreignKey="False" nullable="False" uiLength="50" description="column of dbo.S_TopMenu.TopMenuName (TopMenuName)" sqlDescription="TopMenuName" />
+    <property name="Sequence" lowerName="sequence" tableName="S_TopMenu" field="_Sequence" type="int" getMethod="GetInt32" pattern="No" initialValue="0" columnName="Sequence" sqlType="Int" sqlLength="4" sqlDefaultValue="0" identity="False" primaryKey="False" foreignKey="False" nullable="False" uiLength="11" description="column of dbo.S_TopMenu.Sequence (Sequence)" sqlDescription="Sequence" />
+    <property name="Tips" lowerName="tips" tableName="S_TopMenu" field="_Tips" type="string" getMethod="GetString" pattern="Yes" initialValue="null" columnName="Tips" sqlType="VarChar(50)" sqlLength="50" sqlDefaultValue="null" identity="False" primaryKey="False" foreignKey="False" nullable="True" uiLength="50" description="column of dbo.S_TopMenu.Tips (Tips)" sqlDescription="Tips" />
+    <property name="PageLink" lowerName="pagelink" tableName="S_TopMenu" field="_PageLink" type="string" getMethod="GetString" pattern="Yes" initialValue="null" columnName="PageLink" sqlType="VarChar(100)" sqlLength="100" sqlDefaultValue="null" identity="False" primaryKey="False" foreignKey="False" nullable="True" uiLength="100" description="column of dbo.S_TopMenu.PageLink (PageLink)" sqlDescription="PageLink" />
+    <property name="Image" lowerName="image" tableName="S_TopMenu" field="_Image" type="string" getMethod="GetString" pattern="Yes" initialValue="null" columnName="Image" sqlType="VarChar(100)" sqlLength="100" sqlDefaultValue="null" identity="False" primaryKey="False" foreignKey="False" nullable="True" uiLength="100" description="column of dbo.S_TopMenu.Image (Image)" sqlDescription="Image" />
+  </columns>
+</entity>

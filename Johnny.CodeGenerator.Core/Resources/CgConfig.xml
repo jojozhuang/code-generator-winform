@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" standalone="yes"?>
+<ZrCg>
+  <CodeGeneratorSettings>
+    <WorkingFolder></WorkingFolder>
+    <Template></Template>
+    <VsTemplate></VsTemplate>
+    <Output></Output>
+    <Entity></Entity>
+  </CodeGeneratorSettings>
+	<Servers>
+	</Servers>
+  <Tasks>
+  </Tasks>
+</ZrCg>

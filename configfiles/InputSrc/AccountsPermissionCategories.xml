@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<entity name="AccountsPermissionCategories" modelName="MDLAccountsPermissionCategories" namespace="SouEi" author="JOJOZHUANG\Administrator" createdDateTime="2009-05-02T12:47:31" schema="dbo" tableName="Accounts_PermissionCategories" description="dbo.Accounts_PermissionCategories" spprefix="pr_" XSCodeGen="v0.1 2008-01-09">
+  <primaryKey>
+    <column columnName="PermissionCategoryId" />
+  </primaryKey>
+  <foreignKeys />
+  <indexes>
+    <index name="PK_Description" isClustered="True" isUnique="True" ignoreDuplicateKeys="False">
+      <column columnName="PermissionCategoryId" descending="False" />
+    </index>
+  </indexes>
+  <columns>
+    <property name="PermissionCategoryId" lowerName="permissioncategoryid" tableName="Accounts_PermissionCategories" field="_PermissionCategoryId" type="int" getMethod="GetInt32" pattern="No" initialValue="0" columnName="PermissionCategoryId" sqlType="Int" sqlLength="4" sqlDefaultValue="0" identity="True" primaryKey="True" foreignKey="False" nullable="False" uiLength="11" description="column of dbo.Accounts_PermissionCategories.PermissionCategoryId (PermissionCategoryId)" sqlDescription="PermissionCategoryId" />
+    <property name="Description" lowerName="description" tableName="Accounts_PermissionCategories" field="_Description" type="string" getMethod="GetString" pattern="Yes" initialValue="&quot;&quot;" columnName="Description" sqlType="VarChar(50)" sqlLength="50" sqlDefaultValue="''''" identity="False" primaryKey="False" foreignKey="False" nullable="False" uiLength="50" description="column of dbo.Accounts_PermissionCategories.Description (Description)" sqlDescription="Description" />
+    <property name="Sequence" lowerName="sequence" tableName="Accounts_PermissionCategories" field="_Sequence" type="int" getMethod="GetInt32" pattern="No" initialValue="null" columnName="Sequence" sqlType="Int" sqlLength="4" sqlDefaultValue="null" identity="False" primaryKey="False" foreignKey="False" nullable="True" uiLength="11" description="column of dbo.Accounts_PermissionCategories.Sequence (Sequence)" sqlDescription="Sequence" />
+  </columns>
+</entity>

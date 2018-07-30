@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<entity name="Log" modelName="MDLLog" namespace="SouEi" author="JOJOZHUANG\Administrator" createdDateTime="2009-05-02T20:55:17" schema="dbo" tableName="Log" description="dbo.Log" spprefix="pr_">
+  <primaryKey />
+  <columns>
+    <property name="Id" lowerName="id" tableName="Log" field="_id" initialValue="" columnName="Id" identity="False" primaryKey="False" foreignKey="False" nullable="False" uiLength="0" description="column of dbo.Log.Id" />
+    <property name="Date" lowerName="date" tableName="Log" field="_date" initialValue="" columnName="Date" identity="False" primaryKey="False" foreignKey="False" nullable="False" uiLength="0" description="column of dbo.Log.Date" />
+    <property name="Thread" lowerName="thread" tableName="Log" field="_thread" initialValue="" columnName="Thread" identity="False" primaryKey="False" foreignKey="False" nullable="False" uiLength="0" description="column of dbo.Log.Thread" />
+    <property name="Level" lowerName="level" tableName="Log" field="_level" initialValue="" columnName="Level" identity="False" primaryKey="False" foreignKey="False" nullable="False" uiLength="0" description="column of dbo.Log.Level" />
+    <property name="Logger" lowerName="logger" tableName="Log" field="_logger" initialValue="" columnName="Logger" identity="False" primaryKey="False" foreignKey="False" nullable="False" uiLength="0" description="column of dbo.Log.Logger" />
+    <property name="Message" lowerName="message" tableName="Log" field="_message" initialValue="" columnName="Message" identity="False" primaryKey="False" foreignKey="False" nullable="False" uiLength="0" description="column of dbo.Log.Message" />
+    <property name="Exception" lowerName="exception" tableName="Log" field="_exception" initialValue="" columnName="Exception" identity="False" primaryKey="False" foreignKey="False" nullable="False" uiLength="0" description="column of dbo.Log.Exception" />
+  </columns>
+</entity>

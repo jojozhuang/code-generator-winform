@@ -1,0 +1,229 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="12.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{1657CE3F-6AD6-4AC1-9C85-5982CAB4A63C}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Johnny.CodeGenerator.Controls</RootNamespace>
+    <AssemblyName>Johnny.CodeGenerator.Controls</AssemblyName>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.SqlServer.Smo, Version=9.0.242.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DatabaseTree\DatabaseTree.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DatabaseTree\DlgAddSqlServer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DatabaseTree\DlgAddSqlServer.Designer.cs">
+      <DependentUpon>DlgAddSqlServer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DatabaseTree\Enums.cs" />
+    <Compile Include="DatabaseTree\Nodes.cs" />
+    <Compile Include="ErrorHandler.cs" />
+    <Compile Include="ListBoxSelector\ModuleSelector.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="TaskTree\DlgAddTask.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TaskTree\DlgAddTask.Designer.cs">
+      <DependentUpon>DlgAddTask.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TaskTree\Enums.cs" />
+    <Compile Include="TaskTree\Nodes.cs" />
+    <Compile Include="TaskTree\TaskEventArgs.cs" />
+    <Compile Include="TaskTree\TaskTree.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="VSTempTree\DlgAddProject.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VSTempTree\DlgAddProject.Designer.cs">
+      <DependentUpon>DlgAddProject.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VSTempTree\DlgAddVsVersion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VSTempTree\DlgAddVsVersion.Designer.cs">
+      <DependentUpon>DlgAddVsVersion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VSTempTree\DlgAddSolution.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VSTempTree\DlgAddSolution.Designer.cs">
+      <DependentUpon>DlgAddSolution.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VSTempTree\Enums.cs" />
+    <Compile Include="VSTempTree\Nodes.cs" />
+    <Compile Include="CGConstants.cs" />
+    <Compile Include="VSTempTree\VSTempTree.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="TemplateTree\DlgAddModule.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TemplateTree\DlgAddModule.Designer.cs">
+      <DependentUpon>DlgAddModule.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TemplateTree\DlgAddTemplate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TemplateTree\DlgAddTemplate.Designer.cs">
+      <DependentUpon>DlgAddTemplate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TemplateTree\Enums.cs" />
+    <Compile Include="TemplateTree\Nodes.cs" />
+    <Compile Include="TemplateTree\TemplateTree.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="DatabaseTree\DatabaseTree.resx">
+      <DependentUpon>DatabaseTree.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DatabaseTree\DlgAddSqlServer.resx">
+      <DependentUpon>DlgAddSqlServer.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TaskTree\DlgAddTask.resx">
+      <DependentUpon>DlgAddTask.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TaskTree\TaskTree.resx">
+      <DependentUpon>TaskTree.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VSTempTree\DlgAddProject.resx">
+      <DependentUpon>DlgAddProject.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VSTempTree\DlgAddVsVersion.resx">
+      <DependentUpon>DlgAddVsVersion.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VSTempTree\DlgAddSolution.resx">
+      <DependentUpon>DlgAddSolution.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VSTempTree\VSTempTree.resx">
+      <DependentUpon>VSTempTree.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TemplateTree\DlgAddModule.resx">
+      <DependentUpon>DlgAddModule.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TemplateTree\DlgAddTemplate.resx">
+      <DependentUpon>DlgAddTemplate.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TemplateTree\TemplateTree.resx">
+      <DependentUpon>TemplateTree.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="DatabaseTree\Image\column.ico" />
+    <Content Include="DatabaseTree\Image\db.ico" />
+    <Content Include="DatabaseTree\Image\delete.ico" />
+    <Content Include="DatabaseTree\Image\open.ico" />
+    <Content Include="DatabaseTree\Image\procedure.ico" />
+    <Content Include="DatabaseTree\Image\property.png" />
+    <Content Include="DatabaseTree\Image\refresh.png" />
+    <Content Include="DatabaseTree\Image\servers.ico" />
+    <Content Include="DatabaseTree\Image\sever.ico" />
+    <Content Include="DatabaseTree\Image\table.ico" />
+    <Content Include="DatabaseTree\Image\tables.ico" />
+    <Content Include="DatabaseTree\Image\view.ico" />
+    <Content Include="TaskTree\Image\addtask.ico" />
+    <Content Include="TaskTree\Image\delete.ico" />
+    <Content Include="TaskTree\Image\paused.ico" />
+    <Content Include="TaskTree\Image\refresh.png" />
+    <Content Include="TaskTree\Image\start.ico" />
+    <Content Include="TaskTree\Image\started.ico" />
+    <Content Include="TaskTree\Image\stop.ico" />
+    <Content Include="TaskTree\Image\table.ico" />
+    <Content Include="TaskTree\Image\task.ico" />
+    <Content Include="TaskTree\Image\tasks.ico" />
+    <Content Include="TaskTree\Image\unknow.ico" />
+    <Content Include="TaskTree\Image\xml.ico" />
+    <Content Include="TemplateTree\Image\add.ico" />
+    <Content Include="TemplateTree\Image\delete.ico" />
+    <Content Include="TemplateTree\Image\open.ico" />
+    <Content Include="TemplateTree\Image\property.png" />
+    <Content Include="TemplateTree\Image\refresh.png" />
+    <Content Include="TemplateTree\Image\template.ico" />
+    <Content Include="TemplateTree\Image\templates.ico" />
+    <Content Include="TemplateTree\Image\module.ico" />
+    <Content Include="VSTempTree\Image\add.ico" />
+    <Content Include="VSTempTree\Image\delete.ico" />
+    <Content Include="VSTempTree\Image\open.ico" />
+    <Content Include="VSTempTree\Image\project.ico" />
+    <Content Include="VSTempTree\Image\property.png" />
+    <Content Include="VSTempTree\Image\refresh.png" />
+    <Content Include="VSTempTree\Image\solution.ico" />
+    <Content Include="VSTempTree\Image\Template.ico" />
+    <Content Include="VSTempTree\Image\Templates.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Johnny.CodeGenerator.Core\Johnny.CodeGenerator.Core.csproj">
+      <Project>{133398E8-37F1-4D54-AB03-061E8A3AC087}</Project>
+      <Name>Johnny.CodeGenerator.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Johnny.Controls.Windows\Johnny.Controls.Windows.csproj">
+      <Project>{6e9416cb-8684-4579-8a3b-15b5c2a6d7fc}</Project>
+      <Name>Johnny.Controls.Windows</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Johnny.Library\Johnny.Library.csproj">
+      <Project>{44F4ADFD-CD68-48C8-961B-DC2F1A1BB8A9}</Project>
+      <Name>Johnny.Library</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

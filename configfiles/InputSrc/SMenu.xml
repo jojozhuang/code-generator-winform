@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<entity name="SMenu" modelName="MDLSMenu" namespace="SouEi" author="JOJOZHUANG\Administrator" createdDateTime="2009-05-02T12:47:42" schema="dbo" tableName="S_Menu" description="dbo.S_Menu" spprefix="pr_" XSCodeGen="v0.1 2008-01-09">
+  <primaryKey>
+    <column columnName="MenuId" />
+  </primaryKey>
+  <foreignKeys />
+  <indexes>
+    <index name="PK_Menu_1" isClustered="True" isUnique="True" ignoreDuplicateKeys="False">
+      <column columnName="MenuId" descending="False" />
+    </index>
+  </indexes>
+  <columns>
+    <property name="MenuId" lowerName="menuid" tableName="S_Menu" field="_MenuId" type="int" getMethod="GetInt32" pattern="No" initialValue="0" columnName="MenuId" sqlType="Int" sqlLength="4" sqlDefaultValue="0" identity="True" primaryKey="True" foreignKey="False" nullable="False" uiLength="11" description="column of dbo.S_Menu.MenuId (MenuId)" sqlDescription="MenuId" />
+    <property name="MenuName" lowerName="menuname" tableName="S_Menu" field="_MenuName" type="string" getMethod="GetString" pattern="Yes" initialValue="&quot;&quot;" columnName="MenuName" sqlType="VarChar(50)" sqlLength="50" sqlDefaultValue="''''" identity="False" primaryKey="False" foreignKey="False" nullable="False" uiLength="50" description="column of dbo.S_Menu.MenuName (MenuName)" sqlDescription="MenuName" />
+    <property name="CategoryId" lowerName="categoryid" tableName="S_Menu" field="_CategoryId" type="int" getMethod="GetInt32" pattern="No" initialValue="0" columnName="CategoryId" sqlType="Int" sqlLength="4" sqlDefaultValue="0" identity="False" primaryKey="False" foreignKey="False" nullable="False" uiLength="11" description="column of dbo.S_Menu.CategoryId (CategoryId)" sqlDescription="CategoryId" />
+    <property name="PageLink" lowerName="pagelink" tableName="S_Menu" field="_PageLink" type="string" getMethod="GetString" pattern="Yes" initialValue="null" columnName="PageLink" sqlType="VarChar(100)" sqlLength="100" sqlDefaultValue="null" identity="False" primaryKey="False" foreignKey="False" nullable="True" uiLength="100" description="column of dbo.S_Menu.PageLink (PageLink)" sqlDescription="PageLink" />
+    <property name="ToolTip" lowerName="tooltip" tableName="S_Menu" field="_ToolTip" type="string" getMethod="GetString" pattern="Yes" initialValue="null" columnName="ToolTip" sqlType="VarChar(50)" sqlLength="50" sqlDefaultValue="null" identity="False" primaryKey="False" foreignKey="False" nullable="True" uiLength="50" description="column of dbo.S_Menu.ToolTip (ToolTip)" sqlDescription="ToolTip" />
+    <property name="Image" lowerName="image" tableName="S_Menu" field="_Image" type="string" getMethod="GetString" pattern="Yes" initialValue="null" columnName="Image" sqlType="VarChar(100)" sqlLength="100" sqlDefaultValue="null" identity="False" primaryKey="False" foreignKey="False" nullable="True" uiLength="100" description="column of dbo.S_Menu.Image (Image)" sqlDescription="Image" />
+    <property name="PermissionId" lowerName="permissionid" tableName="S_Menu" field="_PermissionId" type="int" getMethod="GetInt32" pattern="No" initialValue="0" columnName="PermissionId" sqlType="Int" sqlLength="4" sqlDefaultValue="0" identity="False" primaryKey="False" foreignKey="False" nullable="False" uiLength="11" description="column of dbo.S_Menu.PermissionId (PermissionId)" sqlDescription="PermissionId" />
+    <property name="IsDisplay" lowerName="isdisplay" tableName="S_Menu" field="_IsDisplay" type="bool" getMethod="GetBoolean" pattern="Boolean" initialValue="null" columnName="IsDisplay" sqlType="Bit" sqlLength="1" sqlDefaultValue="null" identity="False" primaryKey="False" foreignKey="False" nullable="True" uiLength="5" description="column of dbo.S_Menu.IsDisplay (IsDisplay)" sqlDescription="IsDisplay" />
+    <property name="Sequence" lowerName="sequence" tableName="S_Menu" field="_Sequence" type="int" getMethod="GetInt32" pattern="No" initialValue="0" columnName="Sequence" sqlType="Int" sqlLength="4" sqlDefaultValue="0" identity="False" primaryKey="False" foreignKey="False" nullable="False" uiLength="11" description="column of dbo.S_Menu.Sequence (Sequence)" sqlDescription="Sequence" />
+  </columns>
+</entity>

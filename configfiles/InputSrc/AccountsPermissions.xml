@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<entity name="AccountsPermissions" modelName="MDLAccountsPermissions" namespace="SouEi" author="JOJOZHUANG\Administrator" createdDateTime="2009-05-02T12:47:33" schema="dbo" tableName="Accounts_Permissions" description="dbo.Accounts_Permissions" spprefix="pr_" XSCodeGen="v0.1 2008-01-09">
+  <primaryKey>
+    <column columnName="PermissionId" />
+  </primaryKey>
+  <foreignKeys />
+  <indexes>
+    <index name="PK_Permissions" isClustered="True" isUnique="True" ignoreDuplicateKeys="False">
+      <column columnName="PermissionId" descending="False" />
+    </index>
+  </indexes>
+  <columns>
+    <property name="PermissionId" lowerName="permissionid" tableName="Accounts_Permissions" field="_PermissionId" type="int" getMethod="GetInt32" pattern="No" initialValue="0" columnName="PermissionId" sqlType="Int" sqlLength="4" sqlDefaultValue="0" identity="True" primaryKey="True" foreignKey="False" nullable="False" uiLength="11" description="column of dbo.Accounts_Permissions.PermissionId (PermissionId)" sqlDescription="PermissionId" />
+    <property name="PermissionName" lowerName="permissionname" tableName="Accounts_Permissions" field="_PermissionName" type="string" getMethod="GetString" pattern="Yes" initialValue="&quot;&quot;" columnName="PermissionName" sqlType="VarChar(50)" sqlLength="50" sqlDefaultValue="''''" identity="False" primaryKey="False" foreignKey="False" nullable="False" uiLength="50" description="column of dbo.Accounts_Permissions.PermissionName (PermissionName)" sqlDescription="PermissionName" />
+    <property name="PermissionCategoryId" lowerName="permissioncategoryid" tableName="Accounts_Permissions" field="_PermissionCategoryId" type="int" getMethod="GetInt32" pattern="No" initialValue="0" columnName="PermissionCategoryId" sqlType="Int" sqlLength="4" sqlDefaultValue="0" identity="False" primaryKey="False" foreignKey="False" nullable="False" uiLength="11" description="column of dbo.Accounts_Permissions.PermissionCategoryId (PermissionCategoryId)" sqlDescription="PermissionCategoryId" />
+    <property name="Sequence" lowerName="sequence" tableName="Accounts_Permissions" field="_Sequence" type="int" getMethod="GetInt32" pattern="No" initialValue="null" columnName="Sequence" sqlType="Int" sqlLength="4" sqlDefaultValue="null" identity="False" primaryKey="False" foreignKey="False" nullable="True" uiLength="11" description="column of dbo.Accounts_Permissions.Sequence (Sequence)" sqlDescription="Sequence" />
+  </columns>
+</entity>

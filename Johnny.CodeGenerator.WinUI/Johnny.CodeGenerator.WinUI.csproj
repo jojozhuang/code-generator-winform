@@ -1,0 +1,514 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="12.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{40793A27-478B-4357-B4C3-FC8943131F3D}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Johnny.CodeGenerator.WinUI</RootNamespace>
+    <AssemblyName>DeveloperAssitantV1.0</AssemblyName>
+    <ApplicationIcon>Gnome.ico</ApplicationIcon>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ICSharpCode.TextEditorEx">
+      <HintPath>..\packages\ICSharpCode.TextEditorEx.1.0.0.6\lib\net40\ICSharpCode.TextEditorEx.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AboutDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AboutDialog.Designer.cs">
+      <DependentUpon>AboutDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Editor\FindAndReplaceForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Editor\FindAndReplaceForm.Designer.cs">
+      <DependentUpon>FindAndReplaceForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Editor\Globals.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="FormManager\FormCollection.cs" />
+    <Compile Include="FormManager\FormItem.cs" />
+    <Compile Include="FormManager\FormManager.cs" />
+    <Compile Include="FrmDocument.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmDocument.Designer.cs">
+      <DependentUpon>FrmDocument.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmProperty.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmProperty.Designer.cs">
+      <DependentUpon>FrmProperty.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmTaskEditor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmTaskEditor.Designer.cs">
+      <DependentUpon>FrmTaskEditor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmTaskExplorer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmTaskExplorer.Designer.cs">
+      <DependentUpon>FrmTaskExplorer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmTemplateExplorer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmTemplateExplorer.Designer.cs">
+      <DependentUpon>FrmTemplateExplorer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmVSManager.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmVSManager.Designer.cs">
+      <DependentUpon>FrmVSManager.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DlgSettingsCG.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DlgSettingsCG.Designer.cs">
+      <DependentUpon>DlgSettingsCG.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmSingleGenerator.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSingleGenerator.Designer.cs">
+      <DependentUpon>FrmSingleGenerator.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmBaseCloseMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmBaseCloseMenu.Designer.cs">
+      <DependentUpon>FrmBaseCloseMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmToolbox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmToolbox.Designer.cs">
+      <DependentUpon>FrmToolbox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InputBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainConstants.cs" />
+    <Compile Include="FrmWebBrowser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmWebBrowser.Designer.cs">
+      <DependentUpon>FrmWebBrowser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MyResource.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MyResource.resx</DependentUpon>
+    </Compile>
+    <Compile Include="FrmDatabaseExplorer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmDatabaseExplorer.Designer.cs">
+      <DependentUpon>FrmDatabaseExplorer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmOutput.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmOutput.Designer.cs">
+      <DependentUpon>FrmOutput.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DummyTaskList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DummyTaskList.Designer.cs">
+      <DependentUpon>DummyTaskList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Customization\DockHelper.cs" />
+    <Compile Include="Customization\Extender.cs" />
+    <Compile Include="Customization\InertButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Customization\VS2003AutoHideStrip.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Customization\VS2003DockPaneCaption.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Customization\VS2003DockPaneStrip.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FrmOutput.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FrmOutput.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DummyTaskList.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>DummyTaskList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmProperty.resx">
+      <DependentUpon>FrmProperty.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmTaskEditor.resx">
+      <DependentUpon>FrmTaskEditor.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmTaskExplorer.resx">
+      <DependentUpon>FrmTaskExplorer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmTemplateExplorer.resx">
+      <DependentUpon>FrmTemplateExplorer.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="app.config" />
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Customization\Resources.Designer.cs">
+      <DependentUpon>Resources.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Customization\Strings.Designer.cs">
+      <DependentUpon>Strings.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="SplashScreenForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Toolbox\FrmBase64Convertor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Toolbox\FrmBase64Convertor.Designer.cs">
+      <DependentUpon>FrmBase64Convertor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Toolbox\FrmEntityCreator.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Toolbox\FrmEntityCreator.Designer.cs">
+      <DependentUpon>FrmEntityCreator.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Toolbox\FrmJsonConvertor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Toolbox\FrmJsonConvertor.Designer.cs">
+      <DependentUpon>FrmJsonConvertor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Toolbox\FrmToolBase.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ToolWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ToolWindow.Designer.cs">
+      <DependentUpon>ToolWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Utility\ConfigCtrl.cs" />
+    <EmbeddedResource Include="Resources\DockPanel.config" />
+    <EmbeddedResource Include="Resources\log4net.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Johnny.CodeGenerator.Controls\Johnny.CodeGenerator.Controls.csproj">
+      <Project>{1657CE3F-6AD6-4AC1-9C85-5982CAB4A63C}</Project>
+      <Name>Johnny.CodeGenerator.Controls</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Johnny.CodeGenerator.Core\Johnny.CodeGenerator.Core.csproj">
+      <Project>{133398E8-37F1-4D54-AB03-061E8A3AC087}</Project>
+      <Name>Johnny.CodeGenerator.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Johnny.CodeGenerator.DBEngine\Johnny.CodeGenerator.DBEngine.csproj">
+      <Project>{AABA6F84-658A-4A84-A39F-ADAC5247C73C}</Project>
+      <Name>Johnny.CodeGenerator.DBEngine</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Johnny.Controls.Windows\Johnny.Controls.Windows.csproj">
+      <Project>{6e9416cb-8684-4579-8a3b-15b5c2a6d7fc}</Project>
+      <Name>Johnny.Controls.Windows</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Johnny.Library\Johnny.Library.csproj">
+      <Project>{44F4ADFD-CD68-48C8-961B-DC2F1A1BB8A9}</Project>
+      <Name>Johnny.Library</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\WinFormsUI\WeifenLuo.WinFormsUI.Docking.csproj">
+      <Project>{c75532c4-765b-418e-b09b-46d36b2abdb1}</Project>
+      <Name>WeifenLuo.WinFormsUI.Docking</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Customization\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmDatabaseExplorer.resx">
+      <DependentUpon>FrmDatabaseExplorer.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Customization\Strings.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Strings.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ToolWindow.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ToolWindow.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Customization\Resources\DockIndicator_PaneDiamond.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Customization\Resources\DockPaneStrip_ScrollRightEnabled.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Customization\Resources\DockIndicator_PaneDiamond_Bottom.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Customization\Resources\Dockindicator_PaneDiamond_Fill.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Customization\Resources\DockIndicator_PaneDiamond_Hotspot.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Customization\Resources\DockIndicator_PaneDiamond_HotspotIndex.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Customization\Resources\DockIndicator_PaneDiamond_Left.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Customization\Resources\DockIndicator_PaneDiamond_Right.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Customization\Resources\DockIndicator_PaneDiamond_Top.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Customization\Resources\DockIndicator_PanelBottom.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Customization\Resources\DockIndicator_PanelBottom_Active.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Customization\Resources\DockIndicator_PanelFill.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Customization\Resources\DockIndicator_PanelFill_Active.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Customization\Resources\DockIndicator_PanelLeft.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Customization\Resources\DockIndicator_PanelLeft_Active.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Customization\Resources\DockIndicator_PanelRight.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Customization\Resources\DockIndicator_PanelRight_Active.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Customization\Resources\DockIndicator_PanelTop.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Customization\Resources\DockIndicator_PanelTop_Active.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Customization\Resources\DockPaneCaption_AutoHideNo.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Customization\Resources\DockPaneCaption_AutoHideYes.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Customization\Resources\DockPaneCaption_CloseDisabled.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Customization\Resources\DockPaneCaption_CloseEnabled.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Customization\Resources\DockPaneStrip_CloseDisabled.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Customization\Resources\DockPaneStrip_CloseEnabled.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Customization\Resources\DockPaneStrip_ScrollLeftDisabled.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Customization\Resources\DockPaneStrip_ScrollLeftEnabled.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Customization\Resources\DockPaneStrip_ScrollRightDisabled.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="FrmVSManager.resx">
+      <DependentUpon>FrmVSManager.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DlgSettingsCG.resx">
+      <DependentUpon>DlgSettingsCG.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSingleGenerator.resx">
+      <DependentUpon>FrmSingleGenerator.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmBaseCloseMenu.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FrmBaseCloseMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmToolbox.resx">
+      <DependentUpon>FrmToolbox.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmWebBrowser.resx">
+      <DependentUpon>FrmWebBrowser.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MyResource.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>MyResource.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SplashScreenForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SplashScreenForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Toolbox\FrmBase64Convertor.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FrmBase64Convertor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Toolbox\FrmJsonConvertor.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FrmJsonConvertor.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Config\ToolboxItems.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Gnome.ico" />
+    <Content Include="Resources\back.png" />
+    <Content Include="Resources\cg.ico" />
+    <Content Include="Resources\copy.png" />
+    <Content Include="Resources\csfile.ico" />
+    <Content Include="Resources\cut.png" />
+    <Content Include="Resources\delete.png" />
+    <Content Include="Resources\find.png" />
+    <Content Include="Resources\folder.ico" />
+    <Content Include="Resources\forward.png" />
+    <Content Include="Resources\generator.ico" />
+    <Content Include="Resources\help.png" />
+    <Content Include="Resources\home.ico" />
+    <Content Include="Resources\html.ico" />
+    <Content Include="Resources\ie.ico" />
+    <Content Include="Resources\module.ico" />
+    <Content Include="Resources\newfile.ico" />
+    <Content Include="Resources\open.png" />
+    <Content Include="Resources\output.png" />
+    <Content Include="Resources\paste.png" />
+    <Content Include="Resources\property.png" />
+    <Content Include="Resources\save.png" />
+    <Content Include="Resources\saveall.png" />
+    <Content Include="Resources\servers.ico" />
+    <Content Include="Resources\SplashScreen.jpg" />
+    <Content Include="Resources\tasks.ico" />
+    <Content Include="Resources\templates.ico" />
+    <Content Include="Resources\textdoc.ico" />
+    <Content Include="Resources\toolbox.ico" />
+    <Content Include="Resources\vstemplates.ico" />
+    <Content Include="Resources\xml.ico" />
+    <EmbeddedResource Include="AboutDialog.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>AboutDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Editor\FindAndReplaceForm.resx">
+      <DependentUpon>FindAndReplaceForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmDocument.resx">
+      <DependentUpon>FrmDocument.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Toolbox\FrmEntityCreator.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FrmEntityCreator.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

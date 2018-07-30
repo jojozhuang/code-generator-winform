@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<entity name="ECAdmin" modelName="MDLECAdmin" namespace="SouEi" author="JOJOEMPI-D4VT2H\Administrator" createdDateTime="2008-11-10T20:42:28" schema="dbo" tableName="EC_Admin" description="dbo.EC_Admin" spprefix="pr_" XSCodeGen="v0.1 2008-01-09">
+  <primaryKey>
+    <column columnName="ID" />
+  </primaryKey>
+  <foreignKeys />
+  <indexes>
+    <index name="IX_EC_Admin" isClustered="False" isUnique="True" ignoreDuplicateKeys="False">
+      <column columnName="AdminName" descending="False" />
+    </index>
+    <index name="PK_EC_Admin" isClustered="True" isUnique="True" ignoreDuplicateKeys="False">
+      <column columnName="ID" descending="False" />
+    </index>
+  </indexes>
+  <columns>
+    <property name="ID" lowerName="id" tableName="EC_Admin" field="_ID" type="int" getMethod="GetInt32" pattern="No" initialValue="0" columnName="ID" sqlType="Int" sqlLength="4" sqlDefaultValue="0" identity="True" primaryKey="True" foreignKey="False" nullable="False" uiLength="11" description="column of dbo.EC_Admin.ID (ID)" sqlDescription="ID" />
+    <property name="AdminName" lowerName="adminname" tableName="EC_Admin" field="_AdminName" type="string" getMethod="GetString" pattern="Yes" initialValue="null" columnName="AdminName" sqlType="NVarChar(50)" sqlLength="50" sqlDefaultValue="null" identity="False" primaryKey="False" foreignKey="False" nullable="True" uiLength="50" description="column of dbo.EC_Admin.AdminName (AdminName)" sqlDescription="AdminName" />
+    <property name="PassWord" lowerName="password" tableName="EC_Admin" field="_PassWord" type="string" getMethod="GetString" pattern="Yes" initialValue="null" columnName="PassWord" sqlType="NVarChar(50)" sqlLength="50" sqlDefaultValue="null" identity="False" primaryKey="False" foreignKey="False" nullable="True" uiLength="50" description="column of dbo.EC_Admin.PassWord (PassWord)" sqlDescription="PassWord" />
+    <property name="note" lowerName="note" tableName="EC_Admin" field="_note" type="string" getMethod="GetString" pattern="Yes" initialValue="null" columnName="note" sqlType="NVarChar(200)" sqlLength="200" sqlDefaultValue="null" identity="False" primaryKey="False" foreignKey="False" nullable="True" uiLength="200" description="column of dbo.EC_Admin.note (note)" sqlDescription="note" />
+    <property name="Popedom" lowerName="popedom" tableName="EC_Admin" field="_Popedom" type="int" getMethod="GetInt32" pattern="No" initialValue="null" columnName="Popedom" sqlType="Int" sqlLength="4" sqlDefaultValue="null" identity="False" primaryKey="False" foreignKey="False" nullable="True" uiLength="11" description="column of dbo.EC_Admin.Popedom (Popedom)" sqlDescription="Popedom" />
+    <property name="CDT" lowerName="cdt" tableName="EC_Admin" field="_CDT" type="DateTime" getMethod="GetDateTime" pattern="Yes" initialValue="null" columnName="CDT" sqlType="DateTime" sqlLength="8" sqlDefaultValue="null" identity="False" primaryKey="False" foreignKey="False" nullable="True" uiLength="10" description="column of dbo.EC_Admin.CDT (CDT)" sqlDescription="CDT" />
+    <property name="LDT" lowerName="ldt" tableName="EC_Admin" field="_LDT" type="DateTime" getMethod="GetDateTime" pattern="Yes" initialValue="null" columnName="LDT" sqlType="DateTime" sqlLength="8" sqlDefaultValue="null" identity="False" primaryKey="False" foreignKey="False" nullable="True" uiLength="10" description="column of dbo.EC_Admin.LDT (LDT)" sqlDescription="LDT" />
+    <property name="loginTimes" lowerName="logintimes" tableName="EC_Admin" field="_loginTimes" type="int" getMethod="GetInt32" pattern="No" initialValue="null" columnName="loginTimes" sqlType="Int" sqlLength="4" sqlDefaultValue="null" identity="False" primaryKey="False" foreignKey="False" nullable="True" uiLength="11" description="column of dbo.EC_Admin.loginTimes (loginTimes)" sqlDescription="loginTimes" />
+    <property name="Lock" lowerName="lock" tableName="EC_Admin" field="_Lock" type="bool" getMethod="GetBoolean" pattern="Boolean" initialValue="null" columnName="Lock" sqlType="Bit" sqlLength="1" sqlDefaultValue="null" identity="False" primaryKey="False" foreignKey="False" nullable="True" uiLength="5" description="column of dbo.EC_Admin.Lock (Lock)" sqlDescription="Lock" />
+    <property name="Rights" lowerName="rights" tableName="EC_Admin" field="_Rights" type="string" getMethod="GetString" pattern="Yes" initialValue="null" columnName="Rights" sqlType="NVarChar(200)" sqlLength="200" sqlDefaultValue="null" identity="False" primaryKey="False" foreignKey="False" nullable="True" uiLength="200" description="column of dbo.EC_Admin.Rights (Rights)" sqlDescription="Rights" />
+  </columns>
+</entity>

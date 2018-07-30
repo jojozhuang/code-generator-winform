@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<entity name="CBlogCategory" modelName="MDLCBlogCategory" namespace="SouEi" author="JOJOZHUANG\Administrator" createdDateTime="2009-05-02T12:47:39" schema="dbo" tableName="C_BlogCategory" description="dbo.C_BlogCategory" spprefix="pr_" XSCodeGen="v0.1 2008-01-09">
+  <primaryKey>
+    <column columnName="BlogCategoryId" />
+  </primaryKey>
+  <foreignKeys />
+  <indexes>
+    <index name="PK_C_BlogCategory" isClustered="True" isUnique="True" ignoreDuplicateKeys="False">
+      <column columnName="BlogCategoryId" descending="False" />
+    </index>
+  </indexes>
+  <columns>
+    <property name="BlogCategoryId" lowerName="blogcategoryid" tableName="C_BlogCategory" field="_BlogCategoryId" type="int" getMethod="GetInt32" pattern="No" initialValue="0" columnName="BlogCategoryId" sqlType="Int" sqlLength="4" sqlDefaultValue="0" identity="True" primaryKey="True" foreignKey="False" nullable="False" uiLength="11" description="column of dbo.C_BlogCategory.BlogCategoryId (BlogCategoryId)" sqlDescription="BlogCategoryId" />
+    <property name="BlogCategoryName" lowerName="blogcategoryname" tableName="C_BlogCategory" field="_BlogCategoryName" type="string" getMethod="GetString" pattern="Yes" initialValue="&quot;&quot;" columnName="BlogCategoryName" sqlType="VarChar(50)" sqlLength="50" sqlDefaultValue="''''" identity="False" primaryKey="False" foreignKey="False" nullable="False" uiLength="50" description="column of dbo.C_BlogCategory.BlogCategoryName (BlogCategoryName)" sqlDescription="BlogCategoryName" />
+    <property name="Sequence" lowerName="sequence" tableName="C_BlogCategory" field="_Sequence" type="int" getMethod="GetInt32" pattern="No" initialValue="null" columnName="Sequence" sqlType="Int" sqlLength="4" sqlDefaultValue="null" identity="False" primaryKey="False" foreignKey="False" nullable="True" uiLength="11" description="column of dbo.C_BlogCategory.Sequence (Sequence)" sqlDescription="Sequence" />
+  </columns>
+</entity>

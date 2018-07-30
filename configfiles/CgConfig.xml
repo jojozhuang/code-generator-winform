@@ -1,0 +1,23 @@
+<?xml version="1.0" standalone="yes"?>
+<ZrCg>
+  <WorkingFolder>
+    <XsltTemplate>E:\WorkSpace\CodeGenerator\Johnny.CodeGenerator.WinUI\bin\Debug\XsltTemplate</XsltTemplate>
+    <EntityXml>E:\WorkSpace\CodeGenerator\Johnny.CodeGenerator.WinUI\bin\Debug\InputSrc</EntityXml>
+    <Output>E:\WorkSpace\CodeGenerator\Johnny.CodeGenerator.WinUI\bin\Debug\OutputSrc</Output>
+  </WorkingFolder>
+  <Servers>
+    <DBServer>
+      <DatabaseType>SQL2000</DatabaseType>
+      <ServerName>JOJOZHUANG</ServerName>
+      <ConnectionString>Server=JOJOZHUANG;Integrated Security=SSPI;</ConnectionString>
+      <DatabaseName>SEHome</DatabaseName>
+    </DBServer>
+    <DBServer>
+      <DatabaseType>SQL2000</DatabaseType>
+      <ServerName>JOJOZHUANG</ServerName>
+      <ConnectionString>Server=JOJOZHUANG;Integrated Security=SSPI;</ConnectionString>
+      <DatabaseName>
+      </DatabaseName>
+    </DBServer>
+  </Servers>
+</ZrCg>

@@ -1,0 +1,225 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="12.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{6E9416CB-8684-4579-8A3B-15B5C2A6D7FC}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Johnny.Controls.Windows</RootNamespace>
+    <AssemblyName>Johnny.Controls.Windows</AssemblyName>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>none</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DateTimer\TimeSelector.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DateTimer\TimeSelector.Designer.cs">
+      <DependentUpon>TimeSelector.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ExtendedWebBrowser\AboutForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ExtendedWebBrowser\AboutForm.Designer.cs">
+      <DependentUpon>AboutForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ExtendedWebBrowser\BrowserCommands.cs" />
+    <Compile Include="ExtendedWebBrowser\BrowserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ExtendedWebBrowser\BrowserControl.Designer.cs">
+      <DependentUpon>BrowserControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ExtendedWebBrowser\BrowserExtendedNavigatingEventArgs.cs" />
+    <Compile Include="ExtendedWebBrowser\CommandStateEventArgs.cs" />
+    <Compile Include="ExtendedWebBrowser\ExtendedWebBrowser.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ExtendedWebBrowser\MainWebForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ExtendedWebBrowser\MainWebForm.Designer.cs">
+      <DependentUpon>MainWebForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ExtendedWebBrowser\NativeMethods.cs" />
+    <Compile Include="ExtendedWebBrowser\NotifyCollection.cs" />
+    <Compile Include="ExtendedWebBrowser\OpenUrlForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ExtendedWebBrowser\OpenUrlForm.Designer.cs">
+      <DependentUpon>OpenUrlForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ExtendedWebBrowser\OptionsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ExtendedWebBrowser\OptionsForm.Designer.cs">
+      <DependentUpon>OptionsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ExtendedWebBrowser\PopupBlockerFilterLevel.cs" />
+    <Compile Include="ExtendedWebBrowser\ScriptError.cs" />
+    <Compile Include="ExtendedWebBrowser\ScriptErrorManager.cs" />
+    <Compile Include="ExtendedWebBrowser\ScriptErrorWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ExtendedWebBrowser\ScriptErrorWindow.Designer.cs">
+      <DependentUpon>ScriptErrorWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ExtendedWebBrowser\SettingsHelper.cs" />
+    <Compile Include="ExtendedWebBrowser\TextChangedEventArgs.cs" />
+    <Compile Include="ExtendedWebBrowser\UnsafeNativeMethods.cs" />
+    <Compile Include="ExtendedWebBrowser\UrlContext.cs" />
+    <Compile Include="ExtendedWebBrowser\WindowManager.cs" />
+    <Compile Include="Line\NiceLine.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ListBoxSelector\GenericListBoxSelector.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ListBoxSelector\GenericListBoxSelector.Designer.cs">
+      <DependentUpon>GenericListBoxSelector.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CommonMessageBox\FrmMessageBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CommonMessageBox\FrmMessageBox.Designer.cs">
+      <DependentUpon>FrmMessageBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CommonMessageBox\ShrinkArea.cs" />
+    <Compile Include="OutputTab\OutputTab.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="OutputTab\OutputTab.Designer.cs">
+      <DependentUpon>OutputTab.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <DependentUpon>Resources.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <DependentUpon>Settings.settings</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Toolbox\Toolbox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Toolbox\ToolboxCategory.cs" />
+    <Compile Include="Toolbox\ToolboxCategoryCollection.cs" />
+    <Compile Include="Toolbox\ToolboxConstants.cs" />
+    <Compile Include="Toolbox\ToolboxItem.cs" />
+    <Compile Include="Toolbox\ToolboxItemCollection.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="DateTimer\TimeSelector.resx">
+      <DependentUpon>TimeSelector.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ExtendedWebBrowser\AboutForm.resx">
+      <DependentUpon>AboutForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ExtendedWebBrowser\BrowserControl.resx">
+      <DependentUpon>BrowserControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ExtendedWebBrowser\MainWebForm.resx">
+      <DependentUpon>MainWebForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ExtendedWebBrowser\OpenUrlForm.resx">
+      <DependentUpon>OpenUrlForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ExtendedWebBrowser\OptionsForm.resx">
+      <DependentUpon>OptionsForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ExtendedWebBrowser\ScriptErrorWindow.resx">
+      <DependentUpon>ScriptErrorWindow.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ListBoxSelector\GenericListBoxSelector.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>GenericListBoxSelector.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CommonMessageBox\FrmMessageBox.resx">
+      <DependentUpon>FrmMessageBox.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OutputTab\OutputTab.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>OutputTab.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Toolbox\Toolbox.resx">
+      <DependentUpon>Toolbox.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ExtendedWebBrowser\app.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ExtendedWebBrowser\Test.htm" />
+    <None Include="app.config" />
+    <None Include="Toolbox\Resources\Plus.gif" />
+    <None Include="Toolbox\Resources\Minus.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Johnny.Library\Johnny.Library.csproj">
+      <Project>{44F4ADFD-CD68-48C8-961B-DC2F1A1BB8A9}</Project>
+      <Name>Johnny.Library</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<entity name="SMenuCategory" modelName="MDLSMenuCategory" namespace="SouEi" author="JOJOZHUANG\Administrator" createdDateTime="2009-05-02T12:47:43" schema="dbo" tableName="S_MenuCategory" description="dbo.S_MenuCategory" spprefix="pr_" XSCodeGen="v0.1 2008-01-09">
+  <primaryKey>
+    <column columnName="MenuCategoryId" />
+  </primaryKey>
+  <foreignKeys />
+  <indexes>
+    <index name="PK_MenuCategory" isClustered="True" isUnique="True" ignoreDuplicateKeys="False">
+      <column columnName="MenuCategoryId" descending="False" />
+    </index>
+  </indexes>
+  <columns>
+    <property name="MenuCategoryId" lowerName="menucategoryid" tableName="S_MenuCategory" field="_MenuCategoryId" type="int" getMethod="GetInt32" pattern="No" initialValue="0" columnName="MenuCategoryId" sqlType="Int" sqlLength="4" sqlDefaultValue="0" identity="True" primaryKey="True" foreignKey="False" nullable="False" uiLength="11" description="column of dbo.S_MenuCategory.MenuCategoryId (MenuCategoryId)" sqlDescription="MenuCategoryId" />
+    <property name="MenuCategoryName" lowerName="menucategoryname" tableName="S_MenuCategory" field="_MenuCategoryName" type="string" getMethod="GetString" pattern="Yes" initialValue="&quot;&quot;" columnName="MenuCategoryName" sqlType="VarChar(50)" sqlLength="50" sqlDefaultValue="''''" identity="False" primaryKey="False" foreignKey="False" nullable="False" uiLength="50" description="column of dbo.S_MenuCategory.MenuCategoryName (MenuCategoryName)" sqlDescription="MenuCategoryName" />
+    <property name="Sequence" lowerName="sequence" tableName="S_MenuCategory" field="_Sequence" type="int" getMethod="GetInt32" pattern="No" initialValue="0" columnName="Sequence" sqlType="Int" sqlLength="4" sqlDefaultValue="0" identity="False" primaryKey="False" foreignKey="False" nullable="False" uiLength="11" description="column of dbo.S_MenuCategory.Sequence (Sequence)" sqlDescription="Sequence" />
+  </columns>
+</entity>

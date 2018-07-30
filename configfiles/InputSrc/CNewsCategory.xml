@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<entity name="CNewsCategory" modelName="MDLCNewsCategory" namespace="SouEi" author="JOJOZHUANG\Administrator" createdDateTime="2009-05-02T12:47:41" schema="dbo" tableName="C_NewsCategory" description="dbo.C_NewsCategory" spprefix="pr_" XSCodeGen="v0.1 2008-01-09">
+  <primaryKey>
+    <column columnName="NewsCategoryId" />
+  </primaryKey>
+  <foreignKeys />
+  <indexes>
+    <index name="PK_C_NewsCategory" isClustered="True" isUnique="True" ignoreDuplicateKeys="False">
+      <column columnName="NewsCategoryId" descending="False" />
+    </index>
+  </indexes>
+  <columns>
+    <property name="NewsCategoryId" lowerName="newscategoryid" tableName="C_NewsCategory" field="_NewsCategoryId" type="int" getMethod="GetInt32" pattern="No" initialValue="0" columnName="NewsCategoryId" sqlType="Int" sqlLength="4" sqlDefaultValue="0" identity="True" primaryKey="True" foreignKey="False" nullable="False" uiLength="11" description="column of dbo.C_NewsCategory.NewsCategoryId (NewsCategoryId)" sqlDescription="NewsCategoryId" />
+    <property name="NewsCategoryName" lowerName="newscategoryname" tableName="C_NewsCategory" field="_NewsCategoryName" type="string" getMethod="GetString" pattern="Yes" initialValue="&quot;&quot;" columnName="NewsCategoryName" sqlType="VarChar(50)" sqlLength="50" sqlDefaultValue="''''" identity="False" primaryKey="False" foreignKey="False" nullable="False" uiLength="50" description="column of dbo.C_NewsCategory.NewsCategoryName (NewsCategoryName)" sqlDescription="NewsCategoryName" />
+    <property name="Sequence" lowerName="sequence" tableName="C_NewsCategory" field="_Sequence" type="int" getMethod="GetInt32" pattern="No" initialValue="null" columnName="Sequence" sqlType="Int" sqlLength="4" sqlDefaultValue="null" identity="False" primaryKey="False" foreignKey="False" nullable="True" uiLength="11" description="column of dbo.C_NewsCategory.Sequence (Sequence)" sqlDescription="Sequence" />
+  </columns>
+</entity>

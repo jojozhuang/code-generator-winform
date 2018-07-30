@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<entity name="AccountsRoles" modelName="MDLAccountsRoles" namespace="SouEi" author="JOJOZHUANG\Administrator" createdDateTime="2009-05-02T12:47:35" schema="dbo" tableName="Accounts_Roles" description="dbo.Accounts_Roles" spprefix="pr_" XSCodeGen="v0.1 2008-01-09">
+  <primaryKey>
+    <column columnName="RoleId" />
+  </primaryKey>
+  <foreignKeys />
+  <indexes>
+    <index name="PK_Roles" isClustered="True" isUnique="True" ignoreDuplicateKeys="False">
+      <column columnName="RoleId" descending="False" />
+    </index>
+  </indexes>
+  <columns>
+    <property name="RoleId" lowerName="roleid" tableName="Accounts_Roles" field="_RoleId" type="int" getMethod="GetInt32" pattern="No" initialValue="0" columnName="RoleId" sqlType="Int" sqlLength="4" sqlDefaultValue="0" identity="True" primaryKey="True" foreignKey="False" nullable="False" uiLength="11" description="column of dbo.Accounts_Roles.RoleId (RoleId)" sqlDescription="RoleId" />
+    <property name="RoleName" lowerName="rolename" tableName="Accounts_Roles" field="_RoleName" type="string" getMethod="GetString" pattern="Yes" initialValue="&quot;&quot;" columnName="RoleName" sqlType="VarChar(50)" sqlLength="50" sqlDefaultValue="''''" identity="False" primaryKey="False" foreignKey="False" nullable="False" uiLength="50" description="column of dbo.Accounts_Roles.RoleName (RoleName)" sqlDescription="RoleName" />
+    <property name="Sequence" lowerName="sequence" tableName="Accounts_Roles" field="_Sequence" type="int" getMethod="GetInt32" pattern="No" initialValue="0" columnName="Sequence" sqlType="Int" sqlLength="4" sqlDefaultValue="0" identity="False" primaryKey="False" foreignKey="False" nullable="False" uiLength="11" description="column of dbo.Accounts_Roles.Sequence (Sequence)" sqlDescription="Sequence" />
+  </columns>
+</entity>

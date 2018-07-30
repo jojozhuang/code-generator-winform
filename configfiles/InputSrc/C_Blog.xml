@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<entity name="C_Blog" modelName="MDLC_Blog" namespace="Johnny.SmartMoney" author="JOJOZHUANG\Administrator" createdDateTime="2009-05-03T12:39:19" schema="dbo" tableName="C_Blog" description="dbo.C_Blog" spprefix="pr_">
+  <primaryKey>
+    <column columnName="BlogId" />
+  </primaryKey>
+  <columns>
+    <property name="BlogId" lowerName="blogid" tableName="C_Blog" field="_blogid" initialValue="" columnName="BlogId" identity="False" primaryKey="False" foreignKey="False" nullable="False" uiLength="0" description="column of dbo.C_Blog.BlogId" />
+    <property name="BlogTitle" lowerName="blogtitle" tableName="C_Blog" field="_blogtitle" initialValue="" columnName="BlogTitle" identity="False" primaryKey="False" foreignKey="False" nullable="False" uiLength="0" description="column of dbo.C_Blog.BlogTitle" />
+    <property name="BlogCategory" lowerName="blogcategory" tableName="C_Blog" field="_blogcategory" initialValue="" columnName="BlogCategory" identity="False" primaryKey="False" foreignKey="False" nullable="False" uiLength="0" description="column of dbo.C_Blog.BlogCategory" />
+    <property name="Tag" lowerName="tag" tableName="C_Blog" field="_tag" initialValue="" columnName="Tag" identity="False" primaryKey="False" foreignKey="False" nullable="False" uiLength="0" description="column of dbo.C_Blog.Tag" />
+    <property name="Content" lowerName="content" tableName="C_Blog" field="_content" initialValue="" columnName="Content" identity="False" primaryKey="False" foreignKey="False" nullable="False" uiLength="0" description="column of dbo.C_Blog.Content" />
+    <property name="Hits" lowerName="hits" tableName="C_Blog" field="_hits" initialValue="" columnName="Hits" identity="False" primaryKey="False" foreignKey="False" nullable="False" uiLength="0" description="column of dbo.C_Blog.Hits" />
+    <property name="IsDisplay" lowerName="isdisplay" tableName="C_Blog" field="_isdisplay" initialValue="" columnName="IsDisplay" identity="False" primaryKey="False" foreignKey="False" nullable="False" uiLength="0" description="column of dbo.C_Blog.IsDisplay" />
+    <property name="Sequence" lowerName="sequence" tableName="C_Blog" field="_sequence" initialValue="" columnName="Sequence" identity="False" primaryKey="False" foreignKey="False" nullable="False" uiLength="0" description="column of dbo.C_Blog.Sequence" />
+    <property name="AddedTime" lowerName="addedtime" tableName="C_Blog" field="_addedtime" initialValue="" columnName="AddedTime" identity="False" primaryKey="False" foreignKey="False" nullable="False" uiLength="0" description="column of dbo.C_Blog.AddedTime" />
+    <property name="AddedBy" lowerName="addedby" tableName="C_Blog" field="_addedby" initialValue="" columnName="AddedBy" identity="False" primaryKey="False" foreignKey="False" nullable="False" uiLength="0" description="column of dbo.C_Blog.AddedBy" />
+    <property name="UpdatedTime" lowerName="updatedtime" tableName="C_Blog" field="_updatedtime" initialValue="" columnName="UpdatedTime" identity="False" primaryKey="False" foreignKey="False" nullable="False" uiLength="0" description="column of dbo.C_Blog.UpdatedTime" />
+    <property name="UpdatedBy" lowerName="updatedby" tableName="C_Blog" field="_updatedby" initialValue="" columnName="UpdatedBy" identity="False" primaryKey="False" foreignKey="False" nullable="False" uiLength="0" description="column of dbo.C_Blog.UpdatedBy" />
+  </columns>
+</entity>

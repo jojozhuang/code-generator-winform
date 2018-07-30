@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<entity name="STopMainMenu" modelName="MDLSTopMainMenu" namespace="SouEi" author="JOJOZHUANG\Administrator" createdDateTime="2009-05-02T12:47:44" schema="dbo" tableName="S_TopMainMenu" description="dbo.S_TopMainMenu" spprefix="pr_" XSCodeGen="v0.1 2008-01-09">
+  <primaryKey />
+  <foreignKeys />
+  <indexes />
+  <columns>
+    <property name="TopMenuId" lowerName="topmenuid" tableName="S_TopMainMenu" field="_TopMenuId" type="int" getMethod="GetInt32" pattern="No" initialValue="0" columnName="TopMenuId" sqlType="Int" sqlLength="4" sqlDefaultValue="0" identity="False" primaryKey="False" foreignKey="False" nullable="False" uiLength="11" description="column of dbo.S_TopMainMenu.TopMenuId (TopMenuId)" sqlDescription="TopMenuId" />
+    <property name="MenuCategoryId" lowerName="menucategoryid" tableName="S_TopMainMenu" field="_MenuCategoryId" type="int" getMethod="GetInt32" pattern="No" initialValue="0" columnName="MenuCategoryId" sqlType="Int" sqlLength="4" sqlDefaultValue="0" identity="False" primaryKey="False" foreignKey="False" nullable="False" uiLength="11" description="column of dbo.S_TopMainMenu.MenuCategoryId (MenuCategoryId)" sqlDescription="MenuCategoryId" />
+  </columns>
+</entity>

@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<entity name="AccountsUsers" modelName="MDLAccountsUsers" namespace="SouEi" author="JOJOZHUANG\Administrator" createdDateTime="2009-05-03T12:30:52" schema="dbo" tableName="Accounts_Users" description="dbo.Accounts_Users" spprefix="pr_">
+  <primaryKey>
+    <column columnName="UserId" />
+  </primaryKey>
+  <columns>
+    <property name="UserId" lowerName="userid" tableName="Accounts_Users" field="_userid" initialValue="" columnName="UserId" identity="False" primaryKey="False" foreignKey="False" nullable="False" uiLength="0" description="column of dbo.Accounts_Users.UserId" />
+    <property name="UserName" lowerName="username" tableName="Accounts_Users" field="_username" initialValue="" columnName="UserName" identity="False" primaryKey="False" foreignKey="False" nullable="False" uiLength="0" description="column of dbo.Accounts_Users.UserName" />
+    <property name="Password" lowerName="password" tableName="Accounts_Users" field="_password" initialValue="" columnName="Password" identity="False" primaryKey="False" foreignKey="False" nullable="False" uiLength="0" description="column of dbo.Accounts_Users.Password" />
+    <property name="RealName" lowerName="realname" tableName="Accounts_Users" field="_realname" initialValue="" columnName="RealName" identity="False" primaryKey="False" foreignKey="False" nullable="False" uiLength="0" description="column of dbo.Accounts_Users.RealName" />
+    <property name="Email" lowerName="email" tableName="Accounts_Users" field="_email" initialValue="" columnName="Email" identity="False" primaryKey="False" foreignKey="False" nullable="False" uiLength="0" description="column of dbo.Accounts_Users.Email" />
+    <property name="Gender" lowerName="gender" tableName="Accounts_Users" field="_gender" initialValue="" columnName="Gender" identity="False" primaryKey="False" foreignKey="False" nullable="False" uiLength="0" description="column of dbo.Accounts_Users.Gender" />
+    <property name="Birthday" lowerName="birthday" tableName="Accounts_Users" field="_birthday" initialValue="" columnName="Birthday" identity="False" primaryKey="False" foreignKey="False" nullable="False" uiLength="0" description="column of dbo.Accounts_Users.Birthday" />
+    <property name="Address" lowerName="address" tableName="Accounts_Users" field="_address" initialValue="" columnName="Address" identity="False" primaryKey="False" foreignKey="False" nullable="False" uiLength="0" description="column of dbo.Accounts_Users.Address" />
+    <property name="CityId" lowerName="cityid" tableName="Accounts_Users" field="_cityid" initialValue="" columnName="CityId" identity="False" primaryKey="False" foreignKey="False" nullable="False" uiLength="0" description="column of dbo.Accounts_Users.CityId" />
+    <property name="PostalCode" lowerName="postalcode" tableName="Accounts_Users" field="_postalcode" initialValue="" columnName="PostalCode" identity="False" primaryKey="False" foreignKey="False" nullable="False" uiLength="0" description="column of dbo.Accounts_Users.PostalCode" />
+    <property name="Sequence" lowerName="sequence" tableName="Accounts_Users" field="_sequence" initialValue="" columnName="Sequence" identity="False" primaryKey="False" foreignKey="False" nullable="False" uiLength="0" description="column of dbo.Accounts_Users.Sequence" />
+    <property name="LoginTimes" lowerName="logintimes" tableName="Accounts_Users" field="_logintimes" initialValue="" columnName="LoginTimes" identity="False" primaryKey="False" foreignKey="False" nullable="False" uiLength="0" description="column of dbo.Accounts_Users.LoginTimes" />
+    <property name="LastLogin" lowerName="lastlogin" tableName="Accounts_Users" field="_lastlogin" initialValue="" columnName="LastLogin" identity="False" primaryKey="False" foreignKey="False" nullable="False" uiLength="0" description="column of dbo.Accounts_Users.LastLogin" />
+    <property name="AddedTime" lowerName="addedtime" tableName="Accounts_Users" field="_addedtime" initialValue="" columnName="AddedTime" identity="False" primaryKey="False" foreignKey="False" nullable="False" uiLength="0" description="column of dbo.Accounts_Users.AddedTime" />
+    <property name="AddedBy" lowerName="addedby" tableName="Accounts_Users" field="_addedby" initialValue="" columnName="AddedBy" identity="False" primaryKey="False" foreignKey="False" nullable="False" uiLength="0" description="column of dbo.Accounts_Users.AddedBy" />
+    <property name="UpdatedTime" lowerName="updatedtime" tableName="Accounts_Users" field="_updatedtime" initialValue="" columnName="UpdatedTime" identity="False" primaryKey="False" foreignKey="False" nullable="False" uiLength="0" description="column of dbo.Accounts_Users.UpdatedTime" />
+    <property name="UpdatedBy" lowerName="updatedby" tableName="Accounts_Users" field="_updatedby" initialValue="" columnName="UpdatedBy" identity="False" primaryKey="False" foreignKey="False" nullable="False" uiLength="0" description="column of dbo.Accounts_Users.UpdatedBy" />
+  </columns>
+</entity>

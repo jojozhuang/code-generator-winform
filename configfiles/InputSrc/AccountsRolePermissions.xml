@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<entity name="AccountsRolePermissions" modelName="MDLAccountsRolePermissions" namespace="SouEi" author="JOJOZHUANG\Administrator" createdDateTime="2009-05-02T12:47:35" schema="dbo" tableName="Accounts_RolePermissions" description="dbo.Accounts_RolePermissions" spprefix="pr_" XSCodeGen="v0.1 2008-01-09">
+  <primaryKey />
+  <foreignKeys />
+  <indexes />
+  <columns>
+    <property name="RoleId" lowerName="roleid" tableName="Accounts_RolePermissions" field="_RoleId" type="int" getMethod="GetInt32" pattern="No" initialValue="0" columnName="RoleId" sqlType="Int" sqlLength="4" sqlDefaultValue="0" identity="False" primaryKey="False" foreignKey="False" nullable="False" uiLength="11" description="column of dbo.Accounts_RolePermissions.RoleId (RoleId)" sqlDescription="RoleId" />
+    <property name="PermissionId" lowerName="permissionid" tableName="Accounts_RolePermissions" field="_PermissionId" type="int" getMethod="GetInt32" pattern="No" initialValue="0" columnName="PermissionId" sqlType="Int" sqlLength="4" sqlDefaultValue="0" identity="False" primaryKey="False" foreignKey="False" nullable="False" uiLength="11" description="column of dbo.Accounts_RolePermissions.PermissionId (PermissionId)" sqlDescription="PermissionId" />
+  </columns>
+</entity>

@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" standalone="yes"?>
+<ToolBox>
+	<Category Name="Common Tools" ImageIndex="0">
+		<ToolItem Name="Entity Creator" ImageIndex="3" ClassName="Johnny.CodeGenerator.WinUI.Toolbox.FrmEntityCreator"/>
+    <ToolItem Name="Json Convertor" ImageIndex="5" ClassName="Johnny.CodeGenerator.WinUI.Toolbox.FrmJsonConvertor"/>
+    <ToolItem Name="Base64 Convertor" ImageIndex="7" ClassName="Johnny.CodeGenerator.WinUI.Toolbox.FrmBase64Convertor"/>
+  </Category>
+  <Category Name="Others" ImageIndex="0">
+    <!--<ToolItem Name="汉字&lt;-&gt;拼音" ImageIndex="6" ClassName="Johnny.Kaixin.WinUI.FrmChineseWord"/>-->
+	</Category>
+</ToolBox>

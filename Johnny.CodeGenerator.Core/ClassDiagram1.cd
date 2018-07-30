@@ -1,0 +1,166 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Johnny.CodeGenerator.Core.ConfigCtrl" Collapsed="true">
+    <Position X="6.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAFwQggQFAABgDAAAIAQEiBDwRFAkAIAIEAgAAATEAg=</HashCode>
+      <FileName>ConfigCtrl.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Johnny.CodeGenerator.Core.Constants" Collapsed="true">
+    <Position X="8.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AGBAMhkCAHDoBAUkABIggAKAAQCAAARAIICCGgQAQSA=</HashCode>
+      <FileName>Constants.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Johnny.CodeGenerator.Core.DatabaseCtrl" Collapsed="true">
+    <Position X="10" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMAAACAAAAA=</HashCode>
+      <FileName>DatabaseCtrl.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Johnny.CodeGenerator.Core.Generator" Collapsed="true">
+    <Position X="8.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAQAgCQAEAAAAAAAAAAAAQABMAAAAIAAIAAAAAAAAA=</HashCode>
+      <FileName>Generator.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Johnny.CodeGenerator.Core.CodeGeneratorSettingsInfo" Collapsed="true">
+    <Position X="3" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAAAACAAAEAAABCAAAAIAAAAABACAAAIAAAAEAAAAAA=</HashCode>
+      <FileName>OM\CodeGeneratorSettingsInfo.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Johnny.CodeGenerator.Core.ColumnInfo" Collapsed="true">
+    <Position X="4.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AABgBYQAAAIAAAgEJAJAACAAADJAABAAAAAAAAEAMCA=</HashCode>
+      <FileName>OM\ColumnInfo.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Johnny.CodeGenerator.Core.DatabaseInfo" Collapsed="true">
+    <Position X="3" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEAAAAAAAAAAAACEAAAAAAAAAAAAAAAIACAAQAABAAA=</HashCode>
+      <FileName>OM\DatabaseInfo.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Johnny.CodeGenerator.Core.EntityInfo" Collapsed="true">
+    <Position X="4.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAACAAAAAAACAAAAAAAAAEAAAAAAAAABACAA=</HashCode>
+      <FileName>OM\EntityInfo.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Johnny.CodeGenerator.Core.FieldInfo" Collapsed="true">
+    <Position X="6.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAIIEAAAAAAAQAAAAAAAQCAAAAAIACAQAAAABAAAA=</HashCode>
+      <FileName>OM\FieldInfo.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Johnny.CodeGenerator.Core.ModuleInfo" Collapsed="true">
+    <Position X="10" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAIAEgAAAAAIAAAAAAAACEAAAAAAAAAA=</HashCode>
+      <FileName>OM\ModuleInfo.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Johnny.CodeGenerator.Core.ProjectInfo" Collapsed="true">
+    <Position X="3" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAABAAAAAAECAAAAAAAAAAAAAAIAAAAAABIAAA=</HashCode>
+      <FileName>OM\ProjectInfo.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Johnny.CodeGenerator.Core.ServerInfo" Collapsed="true">
+    <Position X="4.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEIAAAAAAAAAAACEAAAAAAAAAQAAAAAIACAAQAABAAA=</HashCode>
+      <FileName>OM\ServerInfo.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Johnny.CodeGenerator.Core.SingleGeneratorInfo" Collapsed="true">
+    <Position X="6.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAABAAAAQEAAAAAAAAAAAAAAAAAAAAAAAgAAAA=</HashCode>
+      <FileName>OM\SingleGeneratorInfo.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Johnny.CodeGenerator.Core.SolutionInfo" Collapsed="true">
+    <Position X="8.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAABAAEAAAEAAAAAAAAAAAAAAAIAAAAAABIAAA=</HashCode>
+      <FileName>OM\SolutionInfo.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Johnny.CodeGenerator.Core.TableInfo" Collapsed="true">
+    <Position X="10" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEAAAQBAAAIAAICEAAAAAAIEAAAAAAAAAAAAwQgRAAA=</HashCode>
+      <FileName>OM\TableInfo.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Johnny.CodeGenerator.Core.TaskInfo" Collapsed="true">
+    <Position X="3" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAUDAAAEAAABCEBCAAWAAQAFgUAAAAIIEAAAAAAAA=</HashCode>
+      <FileName>OM\TaskInfo.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Johnny.CodeGenerator.Core.TemplateInfo" Collapsed="true">
+    <Position X="4.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CAAAIAAAAAAAAABEAAAAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>OM\TemplateInfo.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Johnny.CodeGenerator.Core.ViewInfo" Collapsed="true">
+    <Position X="8.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEgAAQBQAAIAAICEAAAAAAAEAAAAAAAAAAAAQAgRAAA=</HashCode>
+      <FileName>OM\ViewInfo.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Johnny.CodeGenerator.Core.VsTemplateInfo" Collapsed="true">
+    <Position X="10" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CAAAIAAAAAAAAABEAAAAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>OM\VsVersionInfo.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Johnny.CodeGenerator.Core.TaskBase" Collapsed="true">
+    <Position X="0.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AJgAQAAIAiAAQAUAACCAABYAAAAAAAAACEFACQBAABE=</HashCode>
+      <FileName>TaskBase.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Johnny.CodeGenerator.Core.TaskManager" Collapsed="true">
+    <Position X="0.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAQAgAQAAAEAAAIIAAAAAAAAA=</HashCode>
+      <FileName>TaskManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Johnny.CodeGenerator.Core.UtilityHelper" Collapsed="true">
+    <Position X="6.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAIAgAAAAAQAAEAAAAAAAAAAAAAAAAAAAiAAAAAA=</HashCode>
+      <FileName>UtilityHelper.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Enum Name="Johnny.CodeGenerator.Core.SqlDataType" Collapsed="true">
+    <Position X="3" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EBAQWAAAAAAkAIwACAAiAOACIOCgKDYBAEAACAEogSE=</HashCode>
+      <FileName>Enums.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
