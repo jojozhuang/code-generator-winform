@@ -13,4 +13,4 @@ git clone https://github.com/jojozhuang/code-generator-winform.git
 On Windows, open the project in Visual Studio, compile and run.
 
 # Portfolio
-Read portfolio [Code Generator(C#)](http://jojozhuang.github.io/portfolio/code-generator-winform/) to learn the main functions of this tool.
+Read portfolio [Code Generator(C#)](https://jojozhuang.github.io/portfolio/code-generator-winform/) to learn the main functions of this tool.
