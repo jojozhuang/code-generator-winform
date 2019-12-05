@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<entity name="Pagebinding" modelName="Johnny.EEE.OM.Admin.Pagebinding" namespaceBLL="Johnny.EEE.BLL.Admin" namespaceDAL="Johnny.EEE.DAL.Admin" namespaceModel="Johnny.EEE.OM.Admin" author="JoJoStudio\Johnny" createdDateTime="2016-01-23T21:51:07" schema="dbo" tableName="cms_pagebinding" description="cms_pagebinding">
+  <primaryKey>
+    <column columnName="PageBindingId" lowerName="pagebindingid" sqlParameter="SqlDbType.Int,4" />
+  </primaryKey>
+  <columns>
+    <property sequence="1" columnName="PageBindingId" dataType="int" columnLength="4" precisionLength="10" scale="0" defaultValue=" " columnDescription="Page Binding Id" isIdentity="True" isPrimaryKey="True" isNullable="False" lowerName="pagebindingid" field="_pagebindingid" sqlParameter="SqlDbType.Int,4" csharptype="int" getMethod="GetInt32" pattern="No" initialValue="0" />
+    <property sequence="2" columnName="Title" dataType="nvarchar" columnLength="100" precisionLength="50" scale="0" defaultValue=" " columnDescription="Title" isIdentity="False" isPrimaryKey="False" isNullable="False" lowerName="title" field="_title" sqlParameter="SqlDbType.NVarChar,50" csharptype="string" getMethod="GetString" pattern="Yes" initialValue="&quot;&quot;" />
+    <property sequence="3" columnName="MenuCategoryId" dataType="int" columnLength="4" precisionLength="10" scale="0" defaultValue=" " columnDescription="Menu Category" isIdentity="False" isPrimaryKey="False" isNullable="False" lowerName="menucategoryid" field="_menucategoryid" sqlParameter="SqlDbType.Int,4" csharptype="int" getMethod="GetInt32" pattern="No" initialValue="0" />
+    <property sequence="4" columnName="ListMenuId" dataType="int" columnLength="4" precisionLength="10" scale="0" defaultValue=" " columnDescription="List Page" isIdentity="False" isPrimaryKey="False" isNullable="False" lowerName="listmenuid" field="_listmenuid" sqlParameter="SqlDbType.Int,4" csharptype="int" getMethod="GetInt32" pattern="No" initialValue="0" />
+    <property sequence="5" columnName="AddMenuId" dataType="int" columnLength="4" precisionLength="10" scale="0" defaultValue=" " columnDescription="Add Page" isIdentity="False" isPrimaryKey="False" isNullable="False" lowerName="addmenuid" field="_addmenuid" sqlParameter="SqlDbType.Int,4" csharptype="int" getMethod="GetInt32" pattern="No" initialValue="0" />
+  </columns>
+</entity>

@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<entity name="Mailsettings" modelName="Johnny.EEE.OM.Admin.Mailsettings" namespaceBLL="Johnny.EEE.BLL.Admin" namespaceDAL="Johnny.EEE.DAL.Admin" namespaceModel="Johnny.EEE.OM.Admin" author="JoJoStudio\Johnny" createdDateTime="2016-01-23T21:51:07" schema="dbo" tableName="cms_mailsettings" description="cms_mailsettings">
+  <primaryKey>
+    <column columnName="Id" lowerName="id" sqlParameter="SqlDbType.Int,4" />
+  </primaryKey>
+  <columns>
+    <property sequence="1" columnName="Id" dataType="int" columnLength="4" precisionLength="10" scale="0" defaultValue=" " columnDescription="编号（自动加1）" isIdentity="True" isPrimaryKey="True" isNullable="False" lowerName="id" field="_id" sqlParameter="SqlDbType.Int,4" csharptype="int" getMethod="GetInt32" pattern="No" initialValue="0" />
+    <property sequence="2" columnName="SmtpServerIP" dataType="varchar" columnLength="50" precisionLength="50" scale="0" defaultValue=" " columnDescription="IP" isIdentity="False" isPrimaryKey="False" isNullable="False" lowerName="smtpserverip" field="_smtpserverip" sqlParameter="SqlDbType.VarChar,50" csharptype="string" getMethod="GetString" pattern="Yes" initialValue="&quot;&quot;" />
+    <property sequence="3" columnName="SmtpServerPort" dataType="int" columnLength="4" precisionLength="10" scale="0" defaultValue=" " columnDescription="Port" isIdentity="False" isPrimaryKey="False" isNullable="False" lowerName="smtpserverport" field="_smtpserverport" sqlParameter="SqlDbType.Int,4" csharptype="int" getMethod="GetInt32" pattern="No" initialValue="0" />
+    <property sequence="4" columnName="MailId" dataType="varchar" columnLength="100" precisionLength="100" scale="0" defaultValue=" " columnDescription="邮件地址" isIdentity="False" isPrimaryKey="False" isNullable="False" lowerName="mailid" field="_mailid" sqlParameter="SqlDbType.VarChar,100" csharptype="string" getMethod="GetString" pattern="Yes" initialValue="&quot;&quot;" />
+    <property sequence="5" columnName="MailPassword" dataType="varchar" columnLength="50" precisionLength="50" scale="0" defaultValue=" " columnDescription="密码" isIdentity="False" isPrimaryKey="False" isNullable="False" lowerName="mailpassword" field="_mailpassword" sqlParameter="SqlDbType.VarChar,50" csharptype="string" getMethod="GetString" pattern="Yes" initialValue="&quot;&quot;" />
+  </columns>
+</entity>

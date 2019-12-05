@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<entity name="Role" modelName="Johnny.EEE.OM.Admin.Role" namespaceBLL="Johnny.EEE.BLL.Admin" namespaceDAL="Johnny.EEE.DAL.Admin" namespaceModel="Johnny.EEE.OM.Admin" author="JoJoStudio\Johnny" createdDateTime="2016-01-23T21:51:07" schema="dbo" tableName="cms_role" description="cms_role">
+  <primaryKey>
+    <column columnName="RoleId" lowerName="roleid" sqlParameter="SqlDbType.Int,4" />
+  </primaryKey>
+  <columns>
+    <property sequence="1" columnName="RoleId" dataType="int" columnLength="4" precisionLength="10" scale="0" defaultValue=" " columnDescription="Role Id" isIdentity="True" isPrimaryKey="True" isNullable="False" lowerName="roleid" field="_roleid" sqlParameter="SqlDbType.Int,4" csharptype="int" getMethod="GetInt32" pattern="No" initialValue="0" />
+    <property sequence="2" columnName="RoleName" dataType="nvarchar" columnLength="100" precisionLength="50" scale="0" defaultValue=" " columnDescription="Role Name" isIdentity="False" isPrimaryKey="False" isNullable="False" lowerName="rolename" field="_rolename" sqlParameter="SqlDbType.NVarChar,50" csharptype="string" getMethod="GetString" pattern="Yes" initialValue="&quot;&quot;" />
+    <property sequence="3" columnName="Description" dataType="nvarchar" columnLength="400" precisionLength="200" scale="0" defaultValue=" " columnDescription="Description" isIdentity="False" isPrimaryKey="False" isNullable="True" lowerName="description" field="_description" sqlParameter="SqlDbType.NVarChar,200" csharptype="string" getMethod="GetString" pattern="Yes" initialValue="&quot;&quot;" />
+    <property sequence="4" columnName="Sequence" dataType="int" columnLength="4" precisionLength="10" scale="0" defaultValue=" " columnDescription="Sequence" isIdentity="False" isPrimaryKey="False" isNullable="False" lowerName="sequence" field="_sequence" sqlParameter="SqlDbType.Int,4" csharptype="int" getMethod="GetInt32" pattern="No" initialValue="0" />
+  </columns>
+</entity>

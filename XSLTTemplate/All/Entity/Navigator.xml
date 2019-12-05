@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<entity name="Navigator" modelName="Johnny.EEE.OM.Admin.Navigator" namespaceBLL="Johnny.EEE.BLL.Admin" namespaceDAL="Johnny.EEE.DAL.Admin" namespaceModel="Johnny.EEE.OM.Admin" author="JoJoStudio\Johnny" createdDateTime="2016-01-23T21:51:07" schema="dbo" tableName="cms_navigator" description="cms_navigator">
+  <primaryKey>
+    <column columnName="NavigatorId" lowerName="navigatorid" sqlParameter="SqlDbType.Int,4" />
+  </primaryKey>
+  <columns>
+    <property sequence="1" columnName="NavigatorId" dataType="int" columnLength="4" precisionLength="10" scale="0" defaultValue=" " columnDescription=" " isIdentity="False" isPrimaryKey="True" isNullable="False" lowerName="navigatorid" field="_navigatorid" sqlParameter="SqlDbType.Int,4" csharptype="int" getMethod="GetInt32" pattern="No" initialValue="0" />
+    <property sequence="2" columnName="NavigatorName" dataType="nvarchar" columnLength="100" precisionLength="50" scale="0" defaultValue=" " columnDescription=" " isIdentity="False" isPrimaryKey="False" isNullable="False" lowerName="navigatorname" field="_navigatorname" sqlParameter="SqlDbType.NVarChar,50" csharptype="string" getMethod="GetString" pattern="Yes" initialValue="&quot;&quot;" />
+    <property sequence="3" columnName="Url" dataType="varchar" columnLength="200" precisionLength="200" scale="0" defaultValue=" " columnDescription=" " isIdentity="False" isPrimaryKey="False" isNullable="False" lowerName="url" field="_url" sqlParameter="SqlDbType.VarChar,200" csharptype="string" getMethod="GetString" pattern="Yes" initialValue="&quot;&quot;" />
+    <property sequence="4" columnName="ParentId" dataType="int" columnLength="4" precisionLength="10" scale="0" defaultValue=" " columnDescription=" " isIdentity="False" isPrimaryKey="False" isNullable="True" lowerName="parentid" field="_parentid" sqlParameter="SqlDbType.Int,4" csharptype="int" getMethod="GetInt32" pattern="No" initialValue="0" />
+  </columns>
+</entity>

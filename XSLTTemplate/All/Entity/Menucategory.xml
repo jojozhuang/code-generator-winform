@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<entity name="Menucategory" modelName="Johnny.EEE.OM.Admin.Menucategory" namespaceBLL="Johnny.EEE.BLL.Admin" namespaceDAL="Johnny.EEE.DAL.Admin" namespaceModel="Johnny.EEE.OM.Admin" author="JoJoStudio\Johnny" createdDateTime="2016-01-23T21:51:07" schema="dbo" tableName="cms_menucategory" description="cms_menucategory">
+  <primaryKey>
+    <column columnName="MenuCategoryId" lowerName="menucategoryid" sqlParameter="SqlDbType.Int,4" />
+  </primaryKey>
+  <columns>
+    <property sequence="1" columnName="MenuCategoryId" dataType="int" columnLength="4" precisionLength="10" scale="0" defaultValue=" " columnDescription="Menu Category Id" isIdentity="True" isPrimaryKey="True" isNullable="False" lowerName="menucategoryid" field="_menucategoryid" sqlParameter="SqlDbType.Int,4" csharptype="int" getMethod="GetInt32" pattern="No" initialValue="0" />
+    <property sequence="2" columnName="MenuCategoryName" dataType="nvarchar" columnLength="100" precisionLength="50" scale="0" defaultValue=" " columnDescription="Menu Category Name" isIdentity="False" isPrimaryKey="False" isNullable="False" lowerName="menucategoryname" field="_menucategoryname" sqlParameter="SqlDbType.NVarChar,50" csharptype="string" getMethod="GetString" pattern="Yes" initialValue="&quot;&quot;" />
+    <property sequence="3" columnName="Sequence" dataType="int" columnLength="4" precisionLength="10" scale="0" defaultValue=" " columnDescription="Sequence" isIdentity="False" isPrimaryKey="False" isNullable="False" lowerName="sequence" field="_sequence" sqlParameter="SqlDbType.Int,4" csharptype="int" getMethod="GetInt32" pattern="No" initialValue="0" />
+  </columns>
+</entity>

@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<entity name="Permission" modelName="Johnny.EEE.OM.Admin.Permission" namespaceBLL="Johnny.EEE.BLL.Admin" namespaceDAL="Johnny.EEE.DAL.Admin" namespaceModel="Johnny.EEE.OM.Admin" author="JoJoStudio\Johnny" createdDateTime="2016-01-23T21:51:07" schema="dbo" tableName="cms_permission" description="cms_permission">
+  <primaryKey>
+    <column columnName="PermissionId" lowerName="permissionid" sqlParameter="SqlDbType.Int,4" />
+  </primaryKey>
+  <columns>
+    <property sequence="1" columnName="PermissionId" dataType="int" columnLength="4" precisionLength="10" scale="0" defaultValue=" " columnDescription="Permission Id" isIdentity="True" isPrimaryKey="True" isNullable="False" lowerName="permissionid" field="_permissionid" sqlParameter="SqlDbType.Int,4" csharptype="int" getMethod="GetInt32" pattern="No" initialValue="0" />
+    <property sequence="2" columnName="PermissionName" dataType="nvarchar" columnLength="100" precisionLength="50" scale="0" defaultValue=" " columnDescription="Permission Name" isIdentity="False" isPrimaryKey="False" isNullable="False" lowerName="permissionname" field="_permissionname" sqlParameter="SqlDbType.NVarChar,50" csharptype="string" getMethod="GetString" pattern="Yes" initialValue="&quot;&quot;" />
+    <property sequence="3" columnName="PermissionCategoryId" dataType="int" columnLength="4" precisionLength="10" scale="0" defaultValue=" " columnDescription="Permission Category" isIdentity="False" isPrimaryKey="False" isNullable="False" lowerName="permissioncategoryid" field="_permissioncategoryid" sqlParameter="SqlDbType.Int,4" csharptype="int" getMethod="GetInt32" pattern="No" initialValue="0" />
+    <property sequence="4" columnName="Sequence" dataType="int" columnLength="4" precisionLength="10" scale="0" defaultValue=" " columnDescription="Sequence" isIdentity="False" isPrimaryKey="False" isNullable="False" lowerName="sequence" field="_sequence" sqlParameter="SqlDbType.Int,4" csharptype="int" getMethod="GetInt32" pattern="No" initialValue="0" />
+  </columns>
+</entity>

@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<entity name="Topmenubinding" modelName="Johnny.EEE.OM.Admin.Topmenubinding" namespaceBLL="Johnny.EEE.BLL.Admin" namespaceDAL="Johnny.EEE.DAL.Admin" namespaceModel="Johnny.EEE.OM.Admin" author="JoJoStudio\Johnny" createdDateTime="2016-01-23T21:51:07" schema="dbo" tableName="cms_topmenubinding" description="cms_topmenubinding">
+  <primaryKey />
+  <columns>
+    <property sequence="1" columnName="TopMenuId" dataType="int" columnLength="4" precisionLength="10" scale="0" defaultValue=" " columnDescription="Top Menu" isIdentity="False" isPrimaryKey="False" isNullable="False" lowerName="topmenuid" field="_topmenuid" sqlParameter="SqlDbType.Int,4" csharptype="int" getMethod="GetInt32" pattern="No" initialValue="0" />
+    <property sequence="2" columnName="MenuCategoryId" dataType="int" columnLength="4" precisionLength="10" scale="0" defaultValue=" " columnDescription="Menu Category" isIdentity="False" isPrimaryKey="False" isNullable="False" lowerName="menucategoryid" field="_menucategoryid" sqlParameter="SqlDbType.Int,4" csharptype="int" getMethod="GetInt32" pattern="No" initialValue="0" />
+  </columns>
+</entity>

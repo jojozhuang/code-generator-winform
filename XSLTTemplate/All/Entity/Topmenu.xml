@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<entity name="Topmenu" modelName="Johnny.EEE.OM.Admin.Topmenu" namespaceBLL="Johnny.EEE.BLL.Admin" namespaceDAL="Johnny.EEE.DAL.Admin" namespaceModel="Johnny.EEE.OM.Admin" author="JoJoStudio\Johnny" createdDateTime="2016-01-23T21:51:07" schema="dbo" tableName="cms_topmenu" description="cms_topmenu">
+  <primaryKey>
+    <column columnName="TopMenuId" lowerName="topmenuid" sqlParameter="SqlDbType.Int,4" />
+  </primaryKey>
+  <columns>
+    <property sequence="1" columnName="TopMenuId" dataType="int" columnLength="4" precisionLength="10" scale="0" defaultValue=" " columnDescription="Top Menu Id" isIdentity="True" isPrimaryKey="True" isNullable="False" lowerName="topmenuid" field="_topmenuid" sqlParameter="SqlDbType.Int,4" csharptype="int" getMethod="GetInt32" pattern="No" initialValue="0" />
+    <property sequence="2" columnName="TopMenuName" dataType="nvarchar" columnLength="100" precisionLength="50" scale="0" defaultValue=" " columnDescription="Top Menu Name" isIdentity="False" isPrimaryKey="False" isNullable="False" lowerName="topmenuname" field="_topmenuname" sqlParameter="SqlDbType.NVarChar,50" csharptype="string" getMethod="GetString" pattern="Yes" initialValue="&quot;&quot;" />
+    <property sequence="3" columnName="ToolTip" dataType="nvarchar" columnLength="100" precisionLength="50" scale="0" defaultValue=" " columnDescription="ToolTip" isIdentity="False" isPrimaryKey="False" isNullable="False" lowerName="tooltip" field="_tooltip" sqlParameter="SqlDbType.NVarChar,50" csharptype="string" getMethod="GetString" pattern="Yes" initialValue="&quot;&quot;" />
+    <property sequence="4" columnName="PageLink" dataType="varchar" columnLength="100" precisionLength="100" scale="0" defaultValue=" " columnDescription="Default Page" isIdentity="False" isPrimaryKey="False" isNullable="False" lowerName="pagelink" field="_pagelink" sqlParameter="SqlDbType.VarChar,100" csharptype="string" getMethod="GetString" pattern="Yes" initialValue="&quot;&quot;" />
+    <property sequence="5" columnName="Sequence" dataType="int" columnLength="4" precisionLength="10" scale="0" defaultValue=" " columnDescription="Sequence" isIdentity="False" isPrimaryKey="False" isNullable="False" lowerName="sequence" field="_sequence" sqlParameter="SqlDbType.Int,4" csharptype="int" getMethod="GetInt32" pattern="No" initialValue="0" />
+  </columns>
+</entity>

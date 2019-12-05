@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<entity name="Blogcategory" modelName="Johnny.EEE.OM.Admin.Blogcategory" namespaceBLL="Johnny.EEE.BLL.Admin" namespaceDAL="Johnny.EEE.DAL.Admin" namespaceModel="Johnny.EEE.OM.Admin" author="JoJoStudio\Johnny" createdDateTime="2016-01-23T21:51:08" schema="dbo" tableName="seh_blogcategory" description="seh_blogcategory">
+  <primaryKey>
+    <column columnName="BlogCategoryId" lowerName="blogcategoryid" sqlParameter="SqlDbType.Int,4" />
+  </primaryKey>
+  <columns>
+    <property sequence="1" columnName="BlogCategoryId" dataType="int" columnLength="4" precisionLength="10" scale="0" defaultValue=" " columnDescription="Blog Category Id" isIdentity="True" isPrimaryKey="True" isNullable="False" lowerName="blogcategoryid" field="_blogcategoryid" sqlParameter="SqlDbType.Int,4" csharptype="int" getMethod="GetInt32" pattern="No" initialValue="0" />
+    <property sequence="2" columnName="BlogCategoryName" dataType="nvarchar" columnLength="100" precisionLength="50" scale="0" defaultValue=" " columnDescription="Blog Category Name" isIdentity="False" isPrimaryKey="False" isNullable="False" lowerName="blogcategoryname" field="_blogcategoryname" sqlParameter="SqlDbType.NVarChar,50" csharptype="string" getMethod="GetString" pattern="Yes" initialValue="&quot;&quot;" />
+    <property sequence="3" columnName="Sequence" dataType="int" columnLength="4" precisionLength="10" scale="0" defaultValue=" " columnDescription="Sequence" isIdentity="False" isPrimaryKey="False" isNullable="False" lowerName="sequence" field="_sequence" sqlParameter="SqlDbType.Int,4" csharptype="int" getMethod="GetInt32" pattern="No" initialValue="0" />
+  </columns>
+</entity>
